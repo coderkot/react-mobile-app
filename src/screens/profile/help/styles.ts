@@ -1,0 +1,185 @@
+import { Dimensions, Platform, StyleSheet } from 'react-native';
+import { colors } from '../../../main-styles';
+
+export const styles = StyleSheet.create({
+  /** Help List **/
+  searchContainer: {
+    marginLeft: 16,
+    marginRight: 15,
+    marginVertical: 16,
+    borderRadius: 8,
+    backgroundColor: colors.cream,
+  },
+  itemContainer: {
+    backgroundColor: colors.white,
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    paddingTop: 8,
+    paddingBottom: 16,
+    marginBottom: 16,
+  },
+  itemHeaderContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignContent: 'center',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  helpType: {
+    fontSize: 14,
+    lineHeight: 17,
+    color: colors.middleGray,
+    width: '35%',
+  },
+  helpDate: {
+    fontSize: 14,
+    lineHeight: 17,
+    color: colors.gray,
+    width: '35%',
+  },
+  itemContentContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  title: {
+    color: colors.black,
+    fontSize: 14,
+    lineHeight: 24,
+    paddingRight: 24.5,
+    width: '80%',
+  },
+
+  viewContainer: {
+    height: '100%',
+  },
+
+  /** Chat **/
+  viewChatContainer: {
+    flex: 1,
+    marginBottom: 80,
+    backgroundColor: colors.white,
+    marginTop: 8,
+    borderRadius: 8,
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+  },
+  out: {
+    backgroundColor: colors.shadeWhite,
+    alignSelf: 'flex-start',
+    maxWidth: '70%',
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginBottom: 16,
+    marginLeft: 16,
+    fontSize: 14,
+    lineHeight: 24,
+    color: colors.darkGray,
+  },
+  respondent: {
+    color: colors.blue,
+    alignSelf: 'flex-end',
+    marginRight: 16,
+    marginBottom: 8,
+    fontSize: 12,
+    lineHeight: 12,
+  },
+  in: {
+    backgroundColor: colors.lightBlue,
+    alignSelf: 'flex-end',
+    maxWidth: '70%',
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+    marginBottom: 16,
+    marginRight: 15,
+    fontSize: 14,
+    lineHeight: 24,
+    color: colors.darkGray,
+  },
+  chatControlContainer: {
+    borderTopWidth: 1,
+    borderTopColor: colors.cream,
+    marginTop: 14,
+    height: 74,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingLeft: 16,
+    paddingRight: 15,
+  },
+  chatInput: {
+    maxWidth: '70%',
+    width: '70%',
+  },
+  chatButtonGroup: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  sendButton: {
+    backgroundColor: colors.blue,
+    paddingHorizontal: 11,
+    paddingVertical: 14,
+    borderRadius: 8,
+    marginLeft: 12,
+  },
+  attachButton: {
+    backgroundColor: 'transparent',
+    paddingHorizontal: 11,
+    paddingVertical: 14,
+    borderRadius: 8,
+  },
+
+  /** Help Form **/
+  newQuestionContainer: {
+    alignSelf: 'center',
+    bottom: 80,
+    position: 'absolute',
+  },
+  newQuestionButton: {
+    backgroundColor: colors.blue,
+    borderRadius: 8,
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+  },
+  helpTypeContainer: {
+    borderWidth: 2,
+    borderColor: colors.veryLightGray,
+    borderRadius: 8,
+    marginTop: 24,
+    width: 295,
+  },
+  helpTitle: {
+    borderWidth: 2,
+    borderColor: colors.veryLightGray,
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    marginTop: 24,
+    height: 60,
+    width: 280,
+  },
+  helpDescription: {
+    borderWidth: 2,
+    borderColor: colors.veryLightGray,
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    height: 60,
+    width: 280,
+  },
+  attachFileButton: {
+    backgroundColor: 'transparent',
+    alignItems: 'center',
+  },
+  sendNewQuestion: {
+    backgroundColor: colors.blue,
+    paddingVertical: 16,
+    paddingHorizontal: 44,
+    borderRadius: 8,
+  },
+  picker: {
+    height: 50,
+    width: '100%',
+    padding: Platform.OS === 'ios' ? 16 : 0,
+  },
+});
